@@ -1,0 +1,114 @@
+* {
+  text-decoration: none;
+  color: black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background: #f1f1f1;
+}
+
+body .screen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  min-width: 500px;
+}
+
+body .screen #jsCanvas {
+  width: 500px;
+  height: 600px;
+  background: white;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-top: 20px;
+}
+
+body .screen .FormRange {
+  margin-top: 20px;
+}
+
+body .screen .FormRange input {
+  cursor: pointer;
+}
+
+body .screen .FormBtn {
+  margin-top: 20px;
+}
+
+body .screen .FormBtn button {
+  all: unset;
+  background: white;
+  padding: 6px 13px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+body .screen .Colors {
+  margin-top: 20px;
+}
+
+body .screen .Colors li {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  cursor: pointer;
+}
+
+body .screen .Colors li:last-child {
+  margin-left: 30px;
+}
+
+body .screen .Colors li input {
+  all: unset;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+body .screen .Colors li input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+body .screen .Colors li input[type="color"]::-webkit-color-swatch {
+  border-radius: 40px;
+  border: 1px solid transparent;
+}
+/*# sourceMappingURL=style.css.map */
