@@ -1,0 +1,74 @@
+*{
+    color: black;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+@mixin Sort {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    .screen{
+        main{
+            @include Sort();
+            flex-direction: column;
+            canvas{
+                width: 400px;
+                height: 500px;
+                background-color: white;
+                border-radius: 20px;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                -ms-border-radius: 20px;
+                -o-border-radius: 20px;
+                box-shadow: 4px 4px 10px gray;
+            }
+            .range{
+                margin-top: 25px;
+                input[type="range"]{
+                    outline: none;
+                }
+            }
+            .buttons{
+                @include Sort();
+                all: unset;
+                margin-top: 25px;
+                button{
+                    all: unset;
+                    background-color: white;
+                    border-radius:10px;
+                    -webkit-border-radius:10px;
+                    -moz-border-radius:10px;
+                    -ms-border-radius:10px;
+                    -o-border-radius:10px;
+                    padding: 8px 13px;
+                    cursor: pointer;
+                    font-weight: bold;
+                    font-family: 'nanumsquare';
+                    text-transform: uppercase;
+                }
+            }
+            .colors{
+                @include Sort();
+                margin-top: 25px;
+                li{
+                    display: inline-block;
+                    padding: 16px;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                    cursor: pointer;
+                    margin: 0px 2px;
+                }
+            }
+        }
+    }
+}
